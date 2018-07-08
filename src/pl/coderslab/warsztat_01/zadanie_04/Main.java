@@ -34,12 +34,11 @@ public class Main {
     private static int getDice(int kindOfDice, int countOfThrow) {
         Random random = new Random();
         int throwDice = 0;
-        
+
         for (int i = 0; i < countOfThrow; i++) {
             throwDice += random.nextInt(kindOfDice) + 1;
         }
-
-        System.out.println("Suma z rzutów kostą: " + throwDice);
+        
         return throwDice;
     }
 }
